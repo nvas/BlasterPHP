@@ -6,7 +6,7 @@ $data_table = new Mysql();
 $get_text_file = new View();
 $get_json = new Viewjson();
 ?>
-
+<hr>
 <head>
   <title>Blaster PHP</title>
 </head>
