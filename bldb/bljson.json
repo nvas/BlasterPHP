@@ -2,9 +2,7 @@
     {
         "App": "blaster_PHP",
         "DESC": "PHP Framework",
-        "Version": "1.0.0"
-    },
-    {
+        "Version": "1.0.0",
         "This_file_path": "blaster/bddb/bljson.json"
     }
 ]
