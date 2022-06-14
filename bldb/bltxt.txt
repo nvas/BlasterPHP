@@ -1,0 +1,1 @@
+Web application framework for handling JSON data, TEXT files and SQL queries, easy syntax, clean code. all in one place, fetching API's accessing local files and interacting with Mysql databases
