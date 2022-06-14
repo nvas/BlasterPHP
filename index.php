@@ -6,9 +6,11 @@ $data_table = new Mysql();
 $get_text_file = new View();
 $get_json = new Viewjson();
 ?>
+
 <head>
   <title>Blaster PHP</title>
 </head>
+
 <body>
 
   <main role="main">
@@ -26,7 +28,7 @@ $get_json = new Viewjson();
             </b></p>
           <hr>
         </div>
-        <p class="text-center"><a class="btn btn-primary btn-lg" href="https://github.com/umarelmahedi" role="button">Created by PHP for PHP developers &raquo; <i class="bi bi-cloud-arrow-down-fill"></i></a></p>
+        <p class="text-center"><a class="btn btn-primary btn-lg" href="https://github.com/blaster-org/BlasterPHP" target="_blank" role="button">Created by PHP for PHP developers &raquo; <i class="bi bi-cloud-arrow-down-fill"></i></a></p>
       </div>
     </div>
   </main>
@@ -38,10 +40,20 @@ $get_json = new Viewjson();
           <div class="card-body">
             <h3 class="text-primary text-uppercase bg-dark text-center pt-3 pb-3 rounded-3">how to use </h3>
             <hr>
-            <div class="">
-              <div class="text-light m-2 py-2">
-                <div class="container">
-                  <img src="./public/storge/blaster.png" width="400" height="400" alt="">
+            <div>
+              <div>
+                <div class="container bg-dark rounded-3 h5">
+                  <pre><code class="language-html">
+                    &lt;!DOCTYPE html&gt;
+                    &lt;Html lang="en"&gt;
+                    &lt;?php&gt;
+                    include_once './blaster_load.php';
+                    $data_table = new Mysql();
+                    $get_text_file = new View();
+                    $get_json = new Viewjson();
+                    &lt;!-- Do something nice here --&gt;
+                    ?&gt;
+                  </code></pre>
                 </div>
               </div>
 
@@ -67,20 +79,22 @@ $get_json = new Viewjson();
                 <div class="">
                   <p>Create an object from class <span class="text-primary"><b>Viewjson</b></span> we will name it <span class="text-primary"><b>get_json</b></span> -however- you can name whatever you want, now we are ready to start using the methods bellow in order to get a JSON object.<br><br><span class="text-primary"><b>Output:</b></span></p>
                   <hr>
-                  <div class="bg-dark text-center  py-3 rounded-3">
-                    <p class="text-success "><b>
+                  <div>
+                    <div class="container bg-dark rounded-3">
+                      <pre><code class="language-json text-primary">
                         <?php
                         $get_json->set_json_url('http://blaster.org.uk/api/dog/rand');
                         $get_json->fetch_json_from_url();
                         $get_json->handel_json_from_url();
                         $get_json->show_json_from_url();
                         ?>
-                      </b></p>
+                    </pre></code>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="card-footer text-dark ">
+            <div class="card-footer text-dark">
               <p class="text-primary"><b>Code:</b></p>
               <hr>
               <p>$get_json = new <span class="text-primary"><b>Viewjson</b></span>();</p>
@@ -101,14 +115,18 @@ $get_json = new Viewjson();
                   <p class="text-primary"><br><b>Example:</b></p>
                   <p>We are going to use the same object we have created from class <span class="text-primary"><b>Viewjson</b></span> earlier, with new methods that can deal with local JSON files.<br><br><span class="text-primary"><b>Output:</b></span></p>
                   <hr>
-                  <p class="text-center bg-dark text-success py-3 rounded-3"><b>
+                  <div>
+                    <div class="container bg-dark rounded-3">
+                      <pre><code class="language-json text-primary">
                       <?php
                       $get_json->set_json_path('./bldb/bljson.json');
                       $get_json->read_json_from_file();
                       $get_json->handel_json_from_file();
                       $get_json->show_json_from_file();
                       ?>
-                    </b></p>
+                    </code></pre>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -149,7 +167,7 @@ $get_json = new Viewjson();
               <p> $data_table->db_insert_one('BlasterPHP', 'Is a PHP tool', 'BlasterPHP@blaster.org.uk');</p>
               <p> $data_table->db_show_all();</p>
             </div>
-          </div><br>  
+          </div><br>
         </div>
       </div>
     </div>
@@ -199,7 +217,7 @@ $get_json = new Viewjson();
         <div class="modal-body">
           <?php
           $data_table->db_connect();
-        //   $data_table->db_insert_one('BlasterPHP', 'Is a PHP tool', 'BlasterPHP@blaster.org.uk');
+          //   $data_table->db_insert_one('BlasterPHP', 'Is a PHP tool', 'BlasterPHP@blaster.org.uk');
           $data_table->db_show_all();
           ?>
         </div>
@@ -208,21 +226,37 @@ $get_json = new Viewjson();
       </div>
     </div>
   </div>
-  
-    <!-- Modal -->
-  <div class="modal fade modal-ku" id="team" tabindex="-1" aria-labelledby="team" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title text-primary" id="team">Contributors</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-            <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="umar-elmahedi-163449175" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://uk.linkedin.com/in/umar-elmahedi-163449175?trk=profile-badge"></a></div>
-            <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
-        </div>
-      </div>
-    </div>
-  </div>
+
+  <script>
+    const copyButtonLabel = "Copy Code";
+
+    // you can use a class selector instead if you, or the syntax highlighting library adds one to the 'pre'. 
+    let blocks = document.querySelectorAll("pre");
+
+    blocks.forEach((block) => {
+      // only add button if browser supports Clipboard API
+      if (navigator.clipboard) {
+        let button = document.createElement("button");
+        button.innerText = copyButtonLabel;
+        button.addEventListener("click", copyCode);
+        block.appendChild(button);
+      }
+    });
+
+    async function copyCode(event) {
+      const button = event.srcElement;
+      const pre = button.parentElement;
+      let code = pre.querySelector("code");
+      let text = code.innerText;
+      await navigator.clipboard.writeText(text);
+
+      button.innerText = "Code Copied";
+
+      setTimeout(() => {
+        button.innerText = copyButtonLabel;
+      }, 1000)
+    }
+  </script>
 </body>
+
 </html>
