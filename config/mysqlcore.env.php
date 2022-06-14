@@ -1,10 +1,10 @@
 <?php
 Class Mysqlenv {
 
-    public static $SERVERNAME = "blaster.org.uk";
-    public static $USERNAME = "blastero_blasterphp";
-    public static $PASSWORD = "Blaster@2020";
-    public static $DB = "blastero_blasterphp";
+    public static $SERVERNAME = "127.0.0.1";
+    public static $USERNAME = "root";
+    public static $PASSWORD = "";
+    public static $DB = "blaster_php";
 }
 
 abstract class Mysqlrun extends Mysqlenv {
