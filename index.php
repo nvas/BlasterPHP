@@ -9,9 +9,8 @@ $get_json = new Viewjson();
 <head>
   <title>Blaster PHP</title>
 </head>
-
 <body>
-<p>Blaster</p>
+
   <main role="main">
     <div class="jumbotron py-3">
       <div class="container">
@@ -150,20 +149,7 @@ $get_json = new Viewjson();
               <p> $data_table->db_insert_one('BlasterPHP', 'Is a PHP tool', 'BlasterPHP@blaster.org.uk');</p>
               <p> $data_table->db_show_all();</p>
             </div>
-          </div><br>
-          
-          <!--<div class="card card-footer">-->
-          <!--  <div class="card-block">-->
-          <!--    <h4 class="card-title text-uppercase text-primary bg-dark py-3 rounded-3"><span class="m-3">read from mysql</span></h4>-->
-          <!--    <div class="card-text m-3">-->
-          <!--        <hr>-->
-          <!--        <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>-->
-          <!--        <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="umar-elmahedi-163449175" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://uk.linkedin.com/in/umar-elmahedi-163449175?trk=profile-badge">Umar Elmahedi</a></div>-->
-          <!--    </div>-->
-          <!--  </div>-->
-          <!--</div><br>-->
-          
-          
+          </div><br>  
         </div>
       </div>
     </div>
@@ -202,7 +188,6 @@ $get_json = new Viewjson();
     </footer>
   </div>
 
-
   <!-- Modal -->
   <div class="modal fade modal-ku" id="datatable" tabindex="-1" aria-labelledby="datatable" aria-hidden="true">
     <div class="modal-dialog">
@@ -240,5 +225,4 @@ $get_json = new Viewjson();
     </div>
   </div>
 </body>
-
 </html>

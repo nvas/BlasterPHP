@@ -1,12 +1,8 @@
 [
     {
-        "App": "blaster php",
+        "App": "blaster_PHP",
+        "DESC": "PHP Framework",
         "Version": "1.0.0"
-    },
-    {
-        "PHP": "PHP",
-        "Css": "CSS3",
-        "Bootstrap": "bootstrap5"
     },
     {
         "This_file_path": "blaster/bddb/bljson.json"
