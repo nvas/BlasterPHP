@@ -10,7 +10,12 @@ echo '<meta charset="UTF-8">
     <link rel="stylesheet" href="./public/src/bootstrap/bootstrap5.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <script src="./public/js/script.js"></script>
-    <script src="./public/src/bootstrap/bootstrap5.js"></script>';
+    <script src="./public/src/bootstrap/bootstrap5.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>';
 
 error_reporting(E_ERROR | E_PARSE);
 spl_autoload_register(function($class) {
